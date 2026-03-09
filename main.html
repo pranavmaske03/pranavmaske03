@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pranavmaske03 — Top Languages Preview</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+        body {
+            background: #000000;
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .top-languages-container {
+            background: #000000;
+            padding: 25px;
+            border-radius: 12px;
+            max-width: 600px;
+            width: 100%;
+            margin: 0 auto;
+            border: 1px solid #333333;
+        }
+        
+        .title {
+            color: #ffffff;
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        .subtitle {
+            color: #888888;
+            text-align: center;
+            font-size: 0.85rem;
+            margin-bottom: 20px;
+        }
+        
+        .languages-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+        
+        .language-item {
+            background: #111111;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: left;
+            border: 1px solid #333333;
+        }
+        
+        .language-name {
+            color: #ffffff;
+            margin: 0 0 8px 0;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .progress-bar {
+            background: #333333;
+            border-radius: 4px;
+            height: 8px;
+            width: 100%;
+            overflow: hidden;
+        }
+        
+        .progress-fill {
+            height: 8px;
+            border-radius: 4px;
+            transition: width 1.5s ease-in-out;
+        }
+        
+        /* Different white shades based on percentage ranges */
+        .progress-high { background: #ffffff; }     /* 50%+ */
+        .progress-medium { background: #e0e0e0; }   /* 20%-49% */
+        .progress-low { background: #b0b0b0; }      /* 5%-19% */
+        .progress-very-low { background: #808080; } /* 1%-4% */
+        .progress-minimal { background: #606060; }  /* <1% */
+        
+        @media (max-width: 768px) {
+            .languages-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="top-languages-container">
+        <h3 class="title">Top Languages — pranavmaske03</h3>
+        <p class="subtitle">⚡ Auto-updates daily via GitHub Actions</p>
+        
+        <div class="languages-grid">
+            <!-- 
+                NOTE: These percentages are placeholder values.
+                They will be automatically replaced with YOUR real
+                GitHub language stats once you:
+                1. Push this to your GitHub profile repo
+                2. Run the update_readme.py script (or wait for the daily action)
+            -->
+            <div class="language-item">
+                <p class="language-name">Language 1 <span>--.--%</span></p>
+                <div class="progress-bar">
+                    <div class="progress-fill progress-high" style="width: 0%"></div>
+                </div>
+            </div>
+            
+            <div class="language-item">
+                <p class="language-name">Language 2 <span>--.--%</span></p>
+                <div class="progress-bar">
+                    <div class="progress-fill progress-medium" style="width: 0%"></div>
+                </div>
+            </div>
+            
+            <div class="language-item">
+                <p class="language-name">Language 3 <span>--.--%</span></p>
+                <div class="progress-bar">
+                    <div class="progress-fill progress-low" style="width: 0%"></div>
+                </div>
+            </div>
+            
+            <div class="language-item">
+                <p class="language-name">Language 4 <span>--.--%</span></p>
+                <div class="progress-bar">
+                    <div class="progress-fill progress-very-low" style="width: 0%"></div>
+                </div>
+            </div>
+            
+            <div class="language-item">
+                <p class="language-name">Language 5 <span>--.--%</span></p>
+                <div class="progress-bar">
+                    <div class="progress-fill progress-minimal" style="width: 0%"></div>
+                </div>
+            </div>
+            
+            <div class="language-item">
+                <p class="language-name">Language 6 <span>--.--%</span></p>
+                <div class="progress-bar">
+                    <div class="progress-fill progress-minimal" style="width: 0%"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Animate progress bars on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const progressFills = document.querySelectorAll('.progress-fill');
+            
+            progressFills.forEach(fill => {
+                const width = fill.style.width;
+                fill.style.width = '0%';
+                
+                setTimeout(() => {
+                    fill.style.width = width;
+                }, 100);
+            });
+        });
+    </script>
+</body>
+</html>
