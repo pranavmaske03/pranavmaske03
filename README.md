@@ -1,4 +1,5 @@
 # Hi, I'm Pranav Maske
+![Profile Views](https://komarev.com/ghpvc/?username=pranavmaske03&color=58a6ff&style=for-the-badge&label=PROFILE+VIEWS)
 <br>
 
 <div align="center">
