@@ -1,7 +1,6 @@
 # Hi, I'm Pranav Maske
-![Profile Views](https://komarev.com/ghpvc/?username=pranavmaske03&color=58a6ff&style=for-the-badge&label=PROFILE+VIEWS)
+<img src="https://komarev.com/ghpvc/?username=pranavmaske03&color=58a6ff&style=flat&label=PROFILE+VIEWS" height="20" />
 <br>
-
 <div align="center">
 
 <a href="mailto:pranavbmaske@gmail.com"><img height="28" src="https://img.shields.io/badge/Gmail-21262d?style=for-the-badge&logo=gmail&logoColor=EA4335&labelColor=21262d"/></a>&nbsp;&nbsp;
