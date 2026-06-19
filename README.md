@@ -1,6 +1,6 @@
 <h1 align="center">Hi 👋, I'm Pranav Maske</h1>
 <h3 align="center">A passionate software developer from India</h3>
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=pranavmaske03" alt="ShubhamRasal" /> </p>
+<p align="left"> <img src="https://komarev.com/ghpvc/?username=pranavmaske03" alt="PranavMaske" /> </p>
 
 - 🔭 I am a fresher software developer, currently building strong foundations — exploring systems fundamentals and AI from the ground up
   
